@@ -72,7 +72,7 @@ def race_turtles(colors):
             distance = random.randrange(1, 20)
             t.forward(distance)
             x, y = t.pos()
-            if x >= WIDTH//2 - 10:
+            if x >= WIDTH//2 - 20:
                 return colors[turtles.index(t)]
 
 
@@ -96,4 +96,5 @@ def main():
     time.sleep(3)
 
 
-main()
+if __name__ == '__main__':
+    main()
